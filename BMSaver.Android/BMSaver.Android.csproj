@@ -55,18 +55,6 @@
     <PackageReference Include="Xamarin.Android.Support.v4" Version="27.0.2.1" />
     <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="27.0.2.1" />
     <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="27.0.2.1" />
-    <PackageReference Include="Xamarin.FFImageLoading">
-      <Version>2.4.3.840</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.FFImageLoading.Forms">
-      <Version>2.4.3.840</Version>
-    </PackageReference>
-    <PackageReference Include="sqlite-net-pcl">
-      <Version>1.5.231</Version>
-    </PackageReference>
-    <PackageReference Include="Rg.Plugins.Popup">
-      <Version>1.1.4.168</Version>
-    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -95,102 +83,6 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
-    <AndroidResource Include="Resources\drawable\actions_back.jpg" />
-    <AndroidResource Include="Resources\drawable\clothes_back.jpg" />
-    <AndroidResource Include="Resources\drawable-hdpi\actions_back.jpg" />
-    <AndroidResource Include="Resources\drawable-hdpi\clothes_back.jpg" />
-    <AndroidResource Include="Resources\drawable-xhdpi\actions_back.jpg" />
-    <AndroidResource Include="Resources\drawable-xhdpi\clothes_back.jpg" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\actions_back.jpg" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\clothes_back.jpg" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\actions_back.jpg" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\clothes_back.jpg" />
-    <AndroidResource Include="Resources\drawable\backpack.png" />
-    <AndroidResource Include="Resources\drawable\running.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\backpack.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\running.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\backpack.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\running.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\backpack.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\running.png" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\backpack.png" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\running.png" />
-    <AndroidResource Include="Resources\drawable\info.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\info.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\info.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\info.png" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\info.png" />
-    <AndroidResource Include="Resources\drawable\fab.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\fab.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\fab.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\fab.png" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\fab.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\burya.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\earthquake_icon.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\eruption_icon.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\fire_icon.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\tornado_icon.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\navodnenie.png" />
-    <AndroidResource Include="Resources\drawable\burya.png" />
-    <AndroidResource Include="Resources\drawable\earthquake_icon.png" />
-    <AndroidResource Include="Resources\drawable\eruption_icon.png" />
-    <AndroidResource Include="Resources\drawable\fire_icon.png" />
-    <AndroidResource Include="Resources\drawable\tornado_icon.png" />
-    <AndroidResource Include="Resources\drawable\navodnenie.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\burya.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\earthquake_icon.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\eruption_icon.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\fire_icon.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\tornado_icon.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\navodnenie.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\burya.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\earthquake_icon.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\eruption_icon.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\fire_icon.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\tornado_icon.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\navodnenie.png" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\burya.png" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\earthquake_icon.png" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\eruption_icon.png" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\fire_icon.png" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\tornado_icon.png" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\navodnenie.png" />
-    <AndroidResource Include="Resources\drawable\another_icon.png" />
-    <AndroidResource Include="Resources\drawable\tsunami_icon.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\another_icon.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\tsunami_icon.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\another_icon.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\tsunami_icon.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\another_icon.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\tsunami_icon.png" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\another_icon.png" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\tsunami_icon.png" />
-    <AndroidResource Include="Resources\drawable\backpack_selected.png" />
-    <AndroidResource Include="Resources\drawable\running_selected.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\backpack_selected.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\running_selected.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\backpack_selected.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\running_selected.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\backpack_selected.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\running_selected.png" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\backpack_selected.png" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\running_selected.png" />
-    <AndroidResource Include="Resources\drawable\alarm.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\alarm.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\alarm.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\alarm.png" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\alarm.png" />
-    <AndroidResource Include="Resources\raw\BMSaverSQLite.db3" />
-    <AndroidResource Include="Resources\drawable\checkbox_invisible.png" />
-    <AndroidResource Include="Resources\drawable\checkbox.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\checkbox.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\checkbox_invisible.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\checkbox.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\checkbox_invisible.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\checkbox.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\checkbox_invisible.png" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\checkbox.png" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\checkbox_invisible.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
@@ -198,7 +90,6 @@
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
-    <Folder Include="Resources\raw\" />
   </ItemGroup>
   <Import Project="..\BMSaver\BMSaver.projitems" Label="Shared" />
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
