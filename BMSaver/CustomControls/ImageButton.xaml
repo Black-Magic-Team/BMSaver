@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    x:Class="BMSaver.CustomControls.ImageButton">
+    <ContentView.Content>
+        <Grid
+            RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height="*" />
+                <RowDefinition
+                    Height="auto" />
+            </Grid.RowDefinitions>
+            <ff:CachedImage
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                x:Name="ButtonImage"
+                Grid.Row="0"
+                Aspect="AspectFit" />
+            <Label
+                Grid.Row="1"
+                TextColor="White"
+                HorizontalTextAlignment="Center"
+                HorizontalOptions="Center"
+                x:Name="ButtonText" />
+        </Grid>
+    </ContentView.Content>
+</ContentView>

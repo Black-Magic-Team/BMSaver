@@ -1,5 +1,5 @@
 ﻿using System;
-
+using FFImageLoading;
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
@@ -18,6 +18,11 @@ namespace BMSaver.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(savedInstanceState);
+
+            Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(enableFastRenderer: true);
+
+
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
         }

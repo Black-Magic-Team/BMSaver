@@ -10,14 +10,97 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ActionListPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)CustomControls\CardView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)CustomControls\ImageButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)CustomControls\DizasterView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ClothesListPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)CustomControls\CustomLabel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ItemsPopup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ItemsSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ActionListPage.xaml.cs">
+      <DependentUpon>ActionListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)CustomControls\CardView.xaml.cs">
+      <DependentUpon>CardView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)CustomControls\ImageButton.xaml.cs">
+      <DependentUpon>ImageButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)CustomControls\DizasterView.xaml.cs">
+      <DependentUpon>DizasterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ClothesListPage.xaml.cs">
+      <DependentUpon>ClothesListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ClothesListPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BaseItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\BMSaverDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DocumentItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\EquipmentItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\PharmacyItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\FireItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\FloodItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\StormItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\EarthquakeItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\TornadoItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\EruptionItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\TsunamiItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AnotherItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomControls\CustomLabel.xaml.cs">
+      <DependentUpon>CustomLabel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ItemsPopup.xaml.cs">
+      <DependentUpon>ItemsPopup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ItemsSettings.xaml.cs">
+      <DependentUpon>ItemsSettings.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Views\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
+    <Folder Include="$(MSBuildThisFileDirectory)DependencyServices\" />
+    <Folder Include="$(MSBuildThisFileDirectory)CustomControls\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Database\" />
   </ItemGroup>
 </Project>

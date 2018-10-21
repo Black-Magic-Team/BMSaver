@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:custom="BMSaver.CustomControls.CardView"
+    x:Class="BMSaver.Views.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color
+                x:FactoryMethod="FromHex"
+                x:Key="AppBlue">
+                <x:Arguments>
+                    <x:String>#115b9f</x:String>
+                </x:Arguments>
+            </Color>
+            <Color
+                x:FactoryMethod="FromHex"
+                x:Key="DizasterOrange">
+                <x:Arguments>
+                    <x:String>#EA932D</x:String>
+                </x:Arguments>
+            </Color>
+            <Color
+                x:FactoryMethod="FromHex"
+                x:Key="DizasterBlue">
+                <x:Arguments>
+                    <x:String>#1DA1CA</x:String>
+                </x:Arguments>
+            </Color>
+            <Color
+                x:FactoryMethod="FromHex"
+                x:Key="DizasterGreen">
+                <x:Arguments>
+                    <x:String>#2E975C</x:String>
+                </x:Arguments>
+            </Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height="auto" />
+                <RowDefinition
+                    Height="*" />
+                <RowDefinition
+                    Height="auto" />
+            </Grid.RowDefinitions>
+            <!--<AbsoluteLayout
+                BackgroundColor="{StaticResource AppBlue}"
+                HeightRequest="72"
+                Grid.Row="0">
+                <Label
+                    Margin="10,16"
+                    Text="Катастрофы"
+                    TextColor="White"
+                    VerticalTextAlignment="End"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds="0,0.5,200,72"
+                    FontSize="Large" />
+                <custom:ImageButton
+                    Margin="10,16"
+                    VerticalOptions="End"
+                    Image="alarm.png"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds="1,0.5,56,56" />
+            </AbsoluteLayout>-->
+            <ScrollView
+                Margin="0,5,0,0"
+                Orientation="Vertical"
+                Grid.Row="1">
+                <StackLayout
+                    Orientation="Vertical">
+                    <StackLayout
+                        Spacing="0"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Orientation="Horizontal">
+                        <custom:DizasterView
+                            Margin="10,10,5,0"
+                            Text="Пожар"
+                            Image="fire_icon.png"
+                            Color="{StaticResource DizasterOrange}" />
+                        <custom:DizasterView
+                            Margin="5,10,10,0"
+                            Text="Наводнение"
+                            Image="navodnenie.png"
+                            Color="{StaticResource DizasterBlue}" />
+                    </StackLayout>
+                    <StackLayout
+                        Spacing="0"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Orientation="Horizontal">
+                        <custom:DizasterView
+                            Margin="10,5,5,0"
+                            Text="Снежная буря"
+                            Image="burya.png"
+                            Color="{StaticResource DizasterBlue}" />
+                        <custom:DizasterView
+                            Margin="5,5,10,0"
+                            Text="Землетрясение"
+                            Image="earthquake_icon.png"
+                            Color="{StaticResource DizasterGreen}" />
+                    </StackLayout>
+                    <StackLayout
+                        Spacing="0"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Orientation="Horizontal">
+                        <custom:DizasterView
+                            Margin="10,5,5,0"
+                            Text="Смерч"
+                            Image="tornado_icon.png"
+                            Color="{StaticResource DizasterGreen}" />
+                        <custom:DizasterView
+                            Margin="5,5,10,0"
+                            Text="Извержение вулкана"
+                            Image="eruption_icon.png"
+                            Color="{StaticResource DizasterOrange}" />
+                    </StackLayout>
+                    <StackLayout
+                        Spacing="0"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Orientation="Horizontal">
+                        <custom:DizasterView
+                            Margin="10,5,5,10"
+                            Text="Цунами"
+                            Image="tsunami_icon.png"
+                            Color="{StaticResource DizasterBlue}" />
+                        <custom:DizasterView
+                            Margin="5,5,10,10"
+                            Text="Другое"
+                            Image="another_icon.png"
+                            Color="{StaticResource DizasterGreen}" />
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+            <AbsoluteLayout
+                Grid.Row="2"
+                HeightRequest="56"
+                BackgroundColor="{StaticResource AppBlue}">
+                <custom:ImageButton
+                    Text="Что взять"
+                    FontSize="11"
+                    Image="backpack.png"
+                    Command="{Binding OpenClothesListPage}"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds="0.15,0.5,75,36">
+                </custom:ImageButton>
+                <custom:ImageButton
+                    Image="fab.png"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds="0.5,1,112,112">
+                </custom:ImageButton>
+                <custom:ImageButton
+                    Text="Что делать"
+                    Image="running_selected.png"
+                    FontSize="11"
+                    TextColor="#FFF"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds="0.85,0.5,75,36">
+                </custom:ImageButton>
+            </AbsoluteLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

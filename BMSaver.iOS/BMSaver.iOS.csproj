@@ -140,6 +140,44 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\clothes_back.imageset\clothes-back.jpg" />
+    <ImageAsset Include="Assets.xcassets\clothes_back.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\actions_back.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\actions_back.imageset\actions_back.jpg" />
+    <ImageAsset Include="Assets.xcassets\backpack.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\backpack.imageset\backpack.png" />
+    <ImageAsset Include="Assets.xcassets\running.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\running.imageset\running.png" />
+    <ImageAsset Include="Assets.xcassets\info.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\info.imageset\info.png" />
+    <ImageAsset Include="Assets.xcassets\fab.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\fab.imageset\fab.png" />
+    <ImageAsset Include="Assets.xcassets\burya.imageset\burya.png" />
+    <ImageAsset Include="Assets.xcassets\burya.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\earthquake_icon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\earthquake_icon.imageset\earthquake_icon.png" />
+    <ImageAsset Include="Assets.xcassets\eruption_icon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\eruption_icon.imageset\eruption_icon.png" />
+    <ImageAsset Include="Assets.xcassets\fire_icon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\fire_icon.imageset\fire_icon.png" />
+    <ImageAsset Include="Assets.xcassets\navodnenie.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\navodnenie.imageset\navodnenie.png" />
+    <ImageAsset Include="Assets.xcassets\tornado_icon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\tornado_icon.imageset\tornado_icon.png" />
+    <ImageAsset Include="Assets.xcassets\tsunami_icon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\tsunami_icon.imageset\tsunami_icon.png" />
+    <ImageAsset Include="Assets.xcassets\another_icon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\another_icon.imageset\another_icon.png" />
+    <ImageAsset Include="Assets.xcassets\backpack_selected.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\backpack_selected.imageset\backpack_selected.png" />
+    <ImageAsset Include="Assets.xcassets\running_selected.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\running_selected.imageset\running_selected.png" />
+    <ImageAsset Include="Assets.xcassets\alarm.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\alarm.imageset\alarm.png" />
+    <ImageAsset Include="Assets.xcassets\checkbox.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\checkbox.imageset\checkbox.png" />
+    <ImageAsset Include="Assets.xcassets\checkbox_invisble.imageset\checkbox_invisible.png" />
+    <ImageAsset Include="Assets.xcassets\checkbox_invisble.imageset\Contents.json" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -149,6 +187,43 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms">
+      <Version>2.4.3.840</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading">
+      <Version>2.4.3.840</Version>
+    </PackageReference>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.5.231</Version>
+    </PackageReference>
+    <PackageReference Include="Rg.Plugins.Popup">
+      <Version>1.1.4.168</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\clothes_back.imageset\" />
+    <Folder Include="Assets.xcassets\actions_back.imageset\" />
+    <Folder Include="Assets.xcassets\backpack.imageset\" />
+    <Folder Include="Assets.xcassets\backpack.imageset\" />
+    <Folder Include="Assets.xcassets\running.imageset\" />
+    <Folder Include="Assets.xcassets\info.imageset\" />
+    <Folder Include="Assets.xcassets\fab.imageset\" />
+    <Folder Include="Assets.xcassets\burya.imageset\" />
+    <Folder Include="Assets.xcassets\earthquake_icon.imageset\" />
+    <Folder Include="Assets.xcassets\eruption_icon.imageset\" />
+    <Folder Include="Assets.xcassets\fire_icon.imageset\" />
+    <Folder Include="Assets.xcassets\navodnenie.imageset\" />
+    <Folder Include="Assets.xcassets\tornado_icon.imageset\" />
+    <Folder Include="Assets.xcassets\tsunami_icon.imageset\" />
+    <Folder Include="Assets.xcassets\another_icon.imageset\" />
+    <Folder Include="Assets.xcassets\backpack_selected.imageset\" />
+    <Folder Include="Assets.xcassets\running_selected.imageset\" />
+    <Folder Include="Assets.xcassets\alarm.imageset\" />
+    <Folder Include="Assets.xcassets\checkbox.imageset\" />
+    <Folder Include="Assets.xcassets\checkbox_invisble.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\BMSaverSQLite.db3" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\BMSaver\BMSaver.projitems" Label="Shared" />

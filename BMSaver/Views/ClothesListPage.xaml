@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:custom="BMSaver.CustomControls.CardView"
+    x:Class="BMSaver.Views.ClothesListPage">
+    <ContentPage.Resources>
+        <Color
+            x:FactoryMethod="FromHex"
+            x:Key="AppBlue">
+            <x:Arguments>
+                <x:String>#115b9f</x:String>
+            </x:Arguments>
+        </Color>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid
+            RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height="auto" />
+                <RowDefinition
+                    Height="*" />
+                <RowDefinition
+                    Height="auto" />
+            </Grid.RowDefinitions>
+            <AbsoluteLayout
+                BackgroundColor="{StaticResource AppBlue}"
+                HeightRequest="78">
+                <StackLayout
+                    Orientation="Horizontal"
+                    HeightRequest="48"
+                    AbsoluteLayout.LayoutFlags="All"
+                    AbsoluteLayout.LayoutBounds="0,0,1,1"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="EndAndExpand"
+                    Padding="0"
+                    Grid.Row="0">
+                    <Label
+                        Margin="5,30,0,5"
+                        VerticalTextAlignment="End"
+                        HorizontalTextAlignment="Center"
+                        HorizontalOptions="StartAndExpand"
+                        VerticalOptions="End"
+                        FontSize="Medium"
+                        TextColor="White"
+                        Text="Оснащение">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="OnEquipmentsTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label
+                        Margin="0,30,0,5"
+                        VerticalTextAlignment="End"
+                        HorizontalTextAlignment="Center"
+                        VerticalOptions="EndAndExpand"
+                        FontSize="Medium"
+                        HorizontalOptions="CenterAndExpand"
+                        TextColor="White"
+                        Text="Документы">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="OnDocumentsTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label
+                        Margin="0,30,5,5"
+                        VerticalTextAlignment="End"
+                        FontSize="Medium"
+                        VerticalOptions="EndAndExpand"
+                        HorizontalOptions="EndAndExpand"
+                        HorizontalTextAlignment="Center"
+                        TextColor="White"
+                        Text="Аптечка">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="OnPharmaciesTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+                <Label
+                    Text="+"
+                    FontSize="50"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds="1,0.15,56,56"
+                    TextColor="White">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="AddItemToList" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </AbsoluteLayout>
+            <ListView
+                x:Name="ItemsList"
+                ItemSelected="OnItemSelected"
+                Grid.Row="1">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout
+                                Orientation="Horizontal"
+                                HorizontalOptions="FillAndExpand"
+                                Margin="20,0,0,0">
+                                <Label
+                                    Text="{Binding Todo}"
+                                    VerticalTextAlignment="Center"
+                                    HorizontalOptions="StartAndExpand" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <AbsoluteLayout
+                Grid.Row="2"
+                HeightRequest="56"
+                BackgroundColor="{StaticResource AppBlue}">
+                <custom:ImageButton
+                    Text="Что взять"
+                    FontSize="11"
+                    Image="backpack_selected.png"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds="0.15,0.5,75,36">
+                </custom:ImageButton>
+                <custom:ImageButton
+                    Image="fab.png"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds="0.5,1,112,112">
+                </custom:ImageButton>
+                <custom:ImageButton
+                    Text="Что делать"
+                    Image="running.png"
+                    FontSize="11"
+                    TextColor="#FFF"
+                    Command="{Binding OpenMainPage}"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds="0.85,0.5,75,36">
+                </custom:ImageButton>
+            </AbsoluteLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
